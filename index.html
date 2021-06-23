@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <!-- GoogleFonts -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <h1>Checkout</h1>
+    <!-- Checkout -->
+    <section class="checkout">
+      <!-- 1 -->
+
+      <article class="element">
+        <div class="elment__div">
+          <img
+            class="element__img"
+            src="https://i.postimg.cc/V6Hz5vyM/photo1.png"
+            alt="element"
+          />
+        </div>
+
+        <div class="element__div">
+          <h2 class="element__h2">Vintage element</h2>
+          <div class="element__precio">
+            <h2 id="precio-mochila" class="element__h2--price">$54.99</h2>
+            <span class="element__span">$94.99</span>
+          </div>
+
+          <!-- Counter -->
+
+          <div class="counter">
+            <button id="menos-mochila" class="counter__btn btn__menos">
+              -
+            </button>
+            <p id="cantidad-mochilla" class="counter__p">1</p>
+            <button id="mas-mochila" class="counter__btn btn__mas">+</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2 -->
+
+      <article class="element">
+        <div class="elment__div">
+          <img
+            class="element__img"
+            src="https://i.postimg.cc/xCd00HZn/photo2.png"
+            alt="element"
+          />
+        </div>
+
+        <div class="element__div">
+          <h2 class="element__h2">Levi Shoes</h2>
+          <div class="element__precio">
+            <h2 id="precio-zapatos" class="element__h2--price">$74.99</h2>
+            <span class="element__span">$124.99</span>
+          </div>
+
+          <!-- Counter -->
+
+          <div class="counter">
+            <button id="menos-zapatos" class="counter__btn">-</button>
+            <p id="cantidad-zapatos" class="counter__p">1</p>
+            <button id="mas-zapatos" class="counter__btn">+</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="box">
+        <!-- Shipping -->
+
+        <div class="box__div">
+          <h3 class="box__h3">Shipping</h3>
+          <h3 class="box__h3">$19.00</h3>
+        </div>
+
+        <!-- Total -->
+
+        <div class="box__div">
+          <h3 class="box__h3">Total</h3>
+          <h3 id="total" class="box__h3">$93.99</h3>
+        </div>
+      </article>
+    </section>
+
+    <!-- Contact -->
+
+    <section class="contact">
+      <!-- Info -->
+      <article class="info">
+        <!-- Form Initials -->
+        <form class="form" action="">
+          <h2>Contact Information</h2>
+          <label class="form__label" for="email">E-mail</label> <br />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-envelope-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
+            />
+          </svg>
+          <input
+            class="form__input"
+            name="email"
+            type="email"
+            placeholder="Enter your email"
+          />
+          <br />
+          <label class="form__label" for="phone">Phone</label><br />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-telephone-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+            />
+          </svg>
+          <input
+            class="form__input"
+            name="phone"
+            type="tel"
+            placeholder=" Enter your phone"
+          />
+        </form>
+      </article>
+
+      <!-- Address -->
+
+      <article class="adress">
+        <!-- Form -->
+        <form class="form" action="">
+          <h2>Shipping address</h2>
+          <label class="form__label" for="name">Full Name</label> <br />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-person-circle"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path
+              fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+            />
+          </svg>
+          <input
+            class="form__input"
+            name="name"
+            type="text"
+            placeholder="Your full name"
+          />
+
+          <br />
+          <label class="form__label" for="address">Address</label> <br />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-house-door-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"
+            />
+          </svg>
+          <input
+            class="form__input"
+            name="address"
+            type="text"
+            placeholder="Your address"
+          />
+
+          <br />
+          <label class="form__label" for="city">City</label> <br />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-bank2"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z"
+            />
+          </svg>
+          <input
+            class="form__input"
+            name="city"
+            type="text"
+            placeholder="Your city"
+          />
+
+          <!-- Special display for columns -->
+
+          <div class="especial">
+            <div class="especial__div">
+              <label class="form__label" for="country">Country</label> <br />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-bank2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z"
+                />
+              </svg>
+
+              <!-- SOME COUNTRIES -->
+
+              <select class="form__select" name="country">
+                <option>Your country</option>
+                <option>India</option>
+                <option>South Africa</option>
+                <option>Brazil</option>
+                <option>Germany</option>
+                <option>Canada</option>
+              </select>
+            </div>
+
+            <div class="especial__div">
+              <label class="form__label" for="county">ZIP Code</label> <br />
+              <svg
+                class="form__svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-wallet-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M1.5 2A1.5 1.5 0 0 0 0 3.5v2h6a.5.5 0 0 1 .5.5c0 .253.08.644.306.958.207.288.557.542 1.194.542.637 0 .987-.254 1.194-.542.226-.314.306-.705.306-.958a.5.5 0 0 1 .5-.5h6v-2A1.5 1.5 0 0 0 14.5 2h-13z"
+                />
+                <path
+                  d="M16 6.5h-5.551a2.678 2.678 0 0 1-.443 1.042C9.613 8.088 8.963 8.5 8 8.5c-.963 0-1.613-.412-2.006-.958A2.679 2.679 0 0 1 5.551 6.5H0v6A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6z"
+                />
+              </svg>
+              <input
+                class="form__input"
+                name="county"
+                type="number"
+                placeholder="Your ZIP Code"
+              />
+            </div>
+          </div>
+
+          <!-- Checkbox -->
+          <div class="checkbox">
+            <input class="checkbox__input" type="checkbox" name="save info" />
+            <label class="checkbox__label" for="save info"
+              >Save this information for next time</label
+            >
+          </div>
+          <button class="form__btn" type="submit">Continue</button>
+        </form>
+      </article>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <p class="footer__p">
+        created by
+        <a class="footer__a" href="https://github.com/abhayxkumar"
+          >abhayxkumar</a
+        >
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
